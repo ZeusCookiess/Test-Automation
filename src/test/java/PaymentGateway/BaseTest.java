@@ -2,10 +2,10 @@ package PaymentGateway;
 
 import WebPages.LoginPage;
 import org.apache.commons.exec.CommandLine;
+import org.junit.AfterClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import WebPages.LoginPage;
@@ -33,8 +33,8 @@ public class BaseTest {
     public void hold(){
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
-    @AfterClass
-    public void tearDown(){
+    /*@AfterClass
+    public static void tearDown(){
         driver.quit();
-    }
+    }*/
 }

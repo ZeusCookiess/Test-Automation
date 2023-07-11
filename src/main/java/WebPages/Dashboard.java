@@ -13,10 +13,10 @@ public class Dashboard {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
-    @FindBy(xpath = "/html/body/app-root/app-main/div/app-menu/div/ul/li[5]/ul/li[2]/a")
+    @FindBy(xpath = "/html/body/app-root/app-main/div/app-menu/div/ul/li[5]/ul/li[2]")
     private WebElement CreatePLBtn;
 
-    @FindBy(xpath = "/html/body/app-root/app-main/div/app-menu/div/ul/li[4]/ul/li[1]/a")
+    @FindBy(xpath = "/html/body/app-root/app-main/div/app-menu/div/ul/li[4]/ul/li[1]")
     private WebElement CreateTemplateBtn;
 
 
